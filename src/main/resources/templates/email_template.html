@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <title>Email</title>
+
+
+</head>
+
+
+<body style="margin: 0; padding: 0;">
+
+
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
+    <tr>
+        <td align="center" bgcolor="#78ab46" style="padding: 40px 0 30px 0;">
+
+            <div class="container">
+                <img width="100" height="100"
+                     th:src="@{images/logo.png}"/>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#eaeaea" style="padding: 40px 30px 40px 30px;">
+            <p>Dear <span th:text="${name}"/></p>
+            <p><span th:text="${content}"></span></p>
+            <p>Thanks</p>
+        </td>
+    </tr>
+    <tr>
+
+        <p></p>
+        <p></p>
+
+
+    </tr>
+</table>
+
+</body>
+
+*
+</html>

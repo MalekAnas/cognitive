@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{fragments/layout}">
+
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"/>
+<link rel="stylesheet" type="text/css" th:href="@{/css/main.css}"/>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Super dashboard</title>
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Cognitive Test</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="">Home</a></li>
+            <li class="active"><a href="/" th:href="@{/user/profile}">Profile</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/" th:href="@{/logout}"><span class="glyphicon glyphicon-log-out"></span>Sign out</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+<div class="btn-group">
+    <button type="button" class="btn btn-primary">Manage</button>
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+        <li><a href="/" th:href="@{/user/super/add_partner}">Add new partner</a></li>
+        <li><a href="/" th:href="@{/user/super/view_partners}">View partners</a></li>
+        <li><a href="/" th:href="@{/user/super/add_admin}">Add new Admin</a></li>
+        <li><a href="/" th:href="@{/user/super/view_admins}">View Admins</a></li>
+    </ul>
+</div>
+
+
+
+
+</body>
+</html>

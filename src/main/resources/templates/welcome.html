@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:form="http://www.w3.org/1999/html">
+<head>
+
+
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}"/>
+
+    <title>Welcome</title>
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="" th:href="@{/}" >Cognitive Test</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="" th:href="@{/home}">Home</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/" th:href="@{/registration}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="/" th:href="@{/login}"><span class="glyphicon glyphicon-user"></span>Sign in</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div  align="center">
+
+
+        <div align="center">
+
+
+
+            <div class="container" >
+                <img src="../static/images/logo.png" width="200" height="200"
+                     th:src="@{images/logo.png}" />
+
+                <h1> Welcome to Cognitive Test</h1>
+
+            </div>
+
+        </div>
+
+
+
+
+
+</div>
+
+
+<script type="text/javascript" th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>
+<script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+
+</body>
+</html>

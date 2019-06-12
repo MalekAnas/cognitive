@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}"/>
+    <title>Admins</title>
+</head>
+<body>
+
+
+<div class="container" align="center">
+
+
+    <div th:if="${param.success}">
+        <div class="alert alert-success">
+            You've <strong>successfully</strong>deleted<span th:text="${user.getFirstName()}"></span>an account!
+        </div>
+    </div>
+
+
+    <div th:switch="${admins}">
+        <h2 th:case="null">No Admins found</h2>
+
+        <div>
+            <h2>Admins</h2>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="admin : ${admins}">
+
+
+                    <td th:text="${admin.getFirstName()} + ' ' + ${admin.getLastName()}"></td>
+                    <td>
+                        <a href="" th:href="@{/user/super/view_admins/users/{id} (id=${admin.getId()})}"
+                           th:text="${admin.getEmail()}"> </a>
+                    </td>
+
+                    <td><button type="button" class="btn btn-outline-secondary" > <a th:href="@{/user/super/edit/{id} (id = ${admin.getId()})}">Update</a></button></td>
+                    <td><button type="button" class="btn btn-outline-danger"> <a th:href="@{/user/super/delete_admin/{id} (id = ${admin.getId()})}">Delete</a></button></td>
+                </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+<p>
+    <span><a href="/" th:href="@{/user/super/dashboard}">Back to dashboard</a></span>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{fragments/layout}">
+
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"/>
+<link rel="stylesheet" type="text/css" th:href="@{/css/main.css}"/>
+
+
+<head>
+    <title>Access Denied</title>
+</head>
+<body>
+<div layout:fragment="content" th:remove="tag">
+    <h1>Access denied</h1>
+    <p><a href="/" th:href="@{/}">Back to home page</a></p>
+</div>
+</body>
+</html>
