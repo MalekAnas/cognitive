@@ -5,6 +5,9 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(HttpStatus.NOT_FOUND)
 public class MyFileNotFoundException extends RuntimeException {
+
+
+    private final static long serialVersionUID = 1L;
     public MyFileNotFoundException(String message) {
         super(message);
     }

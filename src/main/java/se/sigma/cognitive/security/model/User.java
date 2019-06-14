@@ -52,17 +52,17 @@ public class User {
     @JoinTable(name = "users_roles", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
     private Collection<Role> roles;
 
-
-    @OneToMany(mappedBy = "user", cascade =CascadeType.ALL)
-    private List<Report> reports;
-
-
-    public void add(Report report){
-        if (reports==null)
-            reports = new ArrayList<>();
-
-    reports.add(report);
-    report.setUser(this);
-    }
+//
+//    @OneToMany(mappedBy = "user", cascade =CascadeType.ALL)
+//    private List<Report> reports;
+//
+//
+//    public void add(Report report){
+//        if (reports==null)
+//            reports = new ArrayList<>();
+//
+//    reports.add(report);
+//    report.setUser(this);
+//    }
 
 }

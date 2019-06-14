@@ -7,21 +7,12 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import se.sigma.cognitive.security.model.User;
 import se.sigma.cognitive.security.repository.UserRepository;
-import se.sigma.cognitive.security.service.ReportService;
 import se.sigma.cognitive.security.service.UserService;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Collection;
 
 @Controller
@@ -34,8 +25,8 @@ public class UserController {
     private UserRepository userRepository;
     @Autowired
     private UserService userService;
-    @Autowired
-    private ReportService reportService;
+//    @Autowired
+//    private ReportService reportService;
 
     @RequestMapping(value = {"/index"}, method = RequestMethod.GET)
     public String showIndex(Model model) {
@@ -62,6 +53,7 @@ public class UserController {
 
         return "index";
     }
+
 
 
 
