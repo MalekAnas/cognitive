@@ -38,7 +38,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         // @formatter:off
 
 
-
         http
                 .csrf().disable()
                 .authorizeRequests()
@@ -54,6 +53,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         , "/css/**"
                         , "/images/**"
                         , "/webjars/**"
+                        , "/reports/**"
+                        , "/save_report/**"
+                        , "/report/**"
 
 
                 )
@@ -69,7 +71,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .formLogin()
                 .loginPage("/login")
-                .defaultSuccessUrl("/user/index" , true)
+                .defaultSuccessUrl("/user/index", true)
                 .permitAll()
                 .and()
                 .logout()
@@ -103,13 +105,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
 
-
     @Bean
     public AuthenticationManager customAuthenticationManager() throws Exception {
         return authenticationManager();
     }
+
     @Bean
-    public SpringSecurityDialect springSecurityDialect(){
+    public SpringSecurityDialect springSecurityDialect() {
         return new SpringSecurityDialect();
     }
 

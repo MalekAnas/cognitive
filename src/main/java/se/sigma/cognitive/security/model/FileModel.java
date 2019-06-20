@@ -2,12 +2,11 @@ package se.sigma.cognitive.security.model;
 
 
 import lombok.Data;
-import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Report")
+@Table(name = "files")
 @Data
 public class FileModel {
 

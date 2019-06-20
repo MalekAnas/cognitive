@@ -1,0 +1,88 @@
+ {
+
+  "patientsName": "Anders",
+  "date": 0,
+
+
+  "test1": {
+    "results": [{"answer":true,"time":980},{"answer":false,"time":320},{"answer":false,"time":510},{"answer":true,"time":440}],
+    "failedTest": false
+  },
+
+  "test2": {
+    "results": [{"button":"1","answer":true,"time":900},{"button":"2","answer":true,"time":890},{"button":"3","answer":true,"time":610},{"button":"4","answer":true,"time":700},{"button":"5","answer":true,"time":1250},{"button":"6","answer":true,"time":1020},{"button":"7","answer":true,"time":970},{"button":"8","answer":true,"time":660},{"button":"9","answer":true,"time":660},{"button":"10","answer":true,"time":440},{"button":"11","answer":true,"time":690},{"button":"12","answer":true,"time":690},{"button":"13","answer":true,"time":1000},{"button":"14","answer":true,"time":720},{"button":"15","answer":true,"time":2180},{"button":"16","answer":true,"time":800},{"button":"17","answer":true,"time":960},{"button":"18","answer":true,"time":1870},{"button":"19","answer":true,"time":1070},{"button":"20","answer":true,"time":500},{"button":"21","answer":true,"time":680},{"button":"22","answer":true,"time":800},{"button":"23","answer":true,"time":950},{"button":"24","answer":true,"time":680},{"button":"25","answer":true,"time":920}],
+    "failedTest": false
+  },
+
+  "test3": {
+    "results": [{"button":"1","answer":true,"time":1390},{"button":"14","answer":true,"time":870},{"button":"2","answer":true,"time":1440},{"button":"15","answer":true,"time":1600},{"button":"3","answer":true,"time":960},{"button":"16","answer":true,"time":1330},{"button":"4","answer":true,"time":1520},{"button":"17","answer":true,"time":3770},{"button":"5","answer":true,"time":2200},{"button":"18","answer":true,"time":840},{"button":"6","answer":true,"time":2050},{"button":"19","answer":true,"time":1000},{"button":"7","answer":true,"time":1730},{"button":"20","answer":true,"time":1660},{"button":"8","answer":true,"time":970},{"button":"21","answer":true,"time":1340},{"button":"11","answer":false,"time":3480},{"button":"10","answer":false,"time":3270},{"button":"9","answer":true,"time":3340},{"button":"22","answer":true,"time":1430},{"button":"10","answer":true,"time":1700},{"button":"23","answer":true,"time":1170},{"button":"11","answer":true,"time":820},{"button":"25","answer":false,"time":2450},{"button":"24","answer":true,"time":3550},{"button":"12","answer":true,"time":1050},{"button":"25","answer":true,"time":1700},{"button":"13","answer":true,"time":920}]
+  },
+
+  "test4": {
+    "results": [{"answer":false,"time":1270},{"answer":false,"time":2360},{"answer":false,"time":2470},{"answer":false,"time":2530},{"answer":true,"time":2470}]
+  },
+
+  "test5": {
+    "results": [{"answer":true,"time":6240},{"answer":false,"time":2350},{"answer":true,"time":7330},{"answer":false,"time":2860},{"answer":false,"time":7140},{"answer":false,"time":7120}]
+  },
+
+  "test6": {
+    "results": [],
+    "recordings": [
+      "ljudfiler/depperssion/nedstamdhet.mp3",
+      "ljudfiler/fingerTappingÖvning/fingerTappingTrain.mp3",
+      "ljudfiler/fingerTapping/fingerTapping1.mp3"
+    ]
+  },
+
+  "test7": {
+    "results": [],
+    "recordings": [
+      "ljudfiler/depperssion/nedstamdhet.mp3"
+    ]
+  },
+
+  "test8": {
+    "results": [
+      {"word":"BARN","wasActuallyShown":false,"answeredThatItWasShown":true},
+      {"word":"FORM","wasActuallyShown":true,"answeredThatItWasShown":false},
+      {"word":"DAG","wasActuallyShown":true,"answeredThatItWasShown":false},
+      {"word":"UTVECKLING","wasActuallyShown":true,"answeredThatItWasShown":false},
+      {"word":"FÖRFATTARE","wasActuallyShown":true,"answeredThatItWasShown":true},
+      {"word":"PROBLEM","wasActuallyShown":false,"answeredThatItWasShown":false},
+      {"word":"BÖRJAN","wasActuallyShown":true,"answeredThatItWasShown":true},
+      {"word":"FILM","wasActuallyShown":true,"answeredThatItWasShown":true},
+      {"word":"OMRÅDE","wasActuallyShown":true,"answeredThatItWasShown":false},
+      {"word":"LIV","wasActuallyShown":true,"answeredThatItWasShown":false},
+      {"word":"MÄNNISKA","wasActuallyShown":true,"answeredThatItWasShown":false},
+      {"word":"ORD","wasActuallyShown":true,"answeredThatItWasShown":false},
+      {"word":"PERSON","wasActuallyShown":true,"answeredThatItWasShown":false},
+      {"word":"ARBETE","wasActuallyShown":true,"answeredThatItWasShown":false},
+      {"word":"NAMN","wasActuallyShown":true,"answeredThatItWasShown":false},
+      {"word":"SLUT","wasActuallyShown":true,"answeredThatItWasShown":false},
+      {"word":"FRÅGA","wasActuallyShown":true,"answeredThatItWasShown":false},
+      {"word":"VÄG","wasActuallyShown":true,"answeredThatItWasShown":true},
+      {"word":"SAK","wasActuallyShown":false,"answeredThatItWasShown":false},
+      {"word":"STAD","answer":true}
+    ]
+  },
+
+  "test9": {
+    "results": [{"test":0,"answer":false},{"test":0,"answer":true},{"test":0,"answer":true},{"test":0,"answer":true},{"test":0,"answer":true},{"test":0,"answer":false},{"test":0,"answer":true},{"test":0,"answer":true},{"test":0,"answer":true},{"test":0,"answer":false},{"test":0,"answer":true},{"test":0,"answer":true},{"test":0,"answer":true},{"test":0,"answer":false},{"test":0,"time":10380},{"test":1,"answer":true},{"test":1,"answer":true},{"test":1,"answer":true},{"test":1,"answer":true},{"test":1,"answer":false},{"test":1,"answer":true},{"test":1,"answer":true},{"test":1,"answer":true},{"test":1,"answer":false},{"test":1,"answer":true},{"test":1,"answer":true},{"test":1,"answer":false},{"test":1,"answer":false},{"test":1,"answer":false},{"test":1,"answer":false},{"test":1,"answer":false},{"test":1,"answer":false},{"test":1,"time":9450},{"test":2,"answer":false},{"test":2,"answer":false},{"test":2,"answer":false},{"test":2,"answer":false},{"test":2,"answer":false},{"test":2,"answer":false},{"test":2,"answer":false},{"test":2,"answer":false},{"test":2,"answer":false},{"test":2,"answer":false},{"test":2,"answer":true},{"test":2,"answer":true},{"test":2,"answer":true},{"test":2,"answer":true},{"test":2,"answer":false},{"test":2,"answer":true},{"test":2,"answer":true},{"test":2,"time":9460}],
+    "failedTest": false
+  },
+
+  "test10": {
+    "results": [{"question":"Är du i grund och botten nöjd med ditt liv?","answer":true},{"question":"Har du gett upp många aktiviteter och intressen?","answer":true},{"question":"Tycker du att ditt liv är tomt?","answer":false},{"question":"Blir du ofta uttråkad?","answer":false},{"question":"Är du oftast på gott humör?","answer":false},{"question":"Är du rädd att något skall hända dig?","answer":true},{"question":"Känner du dig oftast glad och nöjd?","answer":true},{"question":"Känner du dig ofta hjälplös?","answer":true},{"question":"Vill du hellre stanna hemma än gå ut och prova nya sysselsättningar?","answer":true},{"question":"Tycker du att du har fler problem med ditt minne än de flesta andra?","answer":true},{"question":"Tycker du att det känns bra att leva?","answer":true},{"question":"Känner du dig tämligen värdelös som du är nu?","answer":false},{"question":"Känner du dig full av energi?","answer":true},{"question":"Tycker du att din situation är hopplös?","answer":true},{"question":"Tycker du att de flesta andra har det bättre än du?","answer":true}]
+  },
+
+  "test11": {
+    "results": [{"time":3010,"result":true},{"time":5020,"result":true}, {"time":7710,"result":true}]
+  },
+
+  "test12": {
+    "results": [3, 24],
+    "recordings": ["ljudfiler/depperssion/nedstamdhet.mp3", "ljudfiler/fingerTapping/fingerTapping1.mp3"]
+  }
+}
+

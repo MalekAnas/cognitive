@@ -60,4 +60,9 @@ public class FileController {
                 .body(new ByteArrayResource(fileModel.getData()));
     }
 
+
+    @GetMapping("/test/file")
+    public String testIt(){
+        return "test_done_page";
+    }
 }

@@ -2,6 +2,7 @@ package se.sigma.cognitive.security.model;
 
 
 import lombok.Data;
+import se.sigma.cognitive.security.model.result.Report;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -52,17 +53,13 @@ public class User {
     @JoinTable(name = "users_roles", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
     private Collection<Role> roles;
 
-//
-//    @OneToMany(mappedBy = "user", cascade =CascadeType.ALL)
-//    private List<Report> reports;
-//
-//
-//    public void add(Report report){
-//        if (reports==null)
-//            reports = new ArrayList<>();
-//
-//    reports.add(report);
-//    report.setUser(this);
-//    }
+
+
+    @ElementCollection
+    @CollectionTable()
+    private List<Report> reports =new ArrayList<>();
+
+
+
 
 }
