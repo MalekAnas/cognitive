@@ -14,6 +14,7 @@ import se.sigma.cognitive.security.model.User;
 import se.sigma.cognitive.security.service.NotificationService;
 import se.sigma.cognitive.security.service.UserService;
 import se.sigma.cognitive.security.util.EmailConfigration;
+import se.sigma.cognitive.security.util.UserPublicIdGenerator;
 
 import javax.validation.Valid;
 import java.util.HashMap;
@@ -32,6 +33,8 @@ public class RegistrationController {
     @Autowired
     private EmailConfigration emailConfigration;
 
+    @Autowired
+    private UserPublicIdGenerator userPublicIdGenerator;
 
     @ModelAttribute("user")
     public UserDto userDto() {

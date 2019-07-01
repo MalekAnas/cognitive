@@ -31,9 +31,9 @@ public class Test9 {
     @ElementCollection
     @CollectionTable(name = "test9_result", joinColumns = @JoinColumn(name = "test9_id"))
     private List<Test9Result> results = new ArrayList<>();
-
-
-    @OneToOne(mappedBy = "test9")
-    private Report report;
+//
+//
+//    @OneToOne(mappedBy = "test9")
+//    private Report report;
 
 }

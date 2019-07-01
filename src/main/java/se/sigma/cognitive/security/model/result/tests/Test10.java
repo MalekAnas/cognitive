@@ -30,8 +30,8 @@ public class Test10 {
     @ElementCollection
     @CollectionTable(name = "test10_result", joinColumns = @JoinColumn(name = "test10_id"))
     private List<Test10Result> results = new ArrayList<>();
-
-
-    @OneToOne(mappedBy = "test10")
-    private Report report;
+//
+//
+//    @OneToOne(mappedBy = "test10")
+//    private Report report;
 }

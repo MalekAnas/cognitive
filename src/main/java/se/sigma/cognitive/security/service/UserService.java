@@ -55,7 +55,7 @@ public interface UserService extends UserDetailsService {
 
     void changeUserPassword(User user, String newPassword);
 
-    void changeUserUserName(User user, String newUserName);
+//    void changeUserUserName(User user, String newUserName);
 
     void save(User user);
 

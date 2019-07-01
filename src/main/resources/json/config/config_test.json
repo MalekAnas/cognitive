@@ -1,0 +1,905 @@
+{
+  "timer": {
+    "interval": 10
+  },
+  "testtypes": {
+    "_long": [],
+    "_short": []
+  },
+  "button_sequence": 1,
+  "language_template": "language.js",
+
+
+
+  "keycodeToClick": {
+
+    "key109": 1,
+    "key105": 2,
+    "key104": 3,
+    "key103" : 4,
+    "key39": "nextTest"
+  },
+  "verifyKlaratTestObj": [
+    "Trail Making A",
+    "Trail Making B",
+    "Finger Tapping"
+  ],
+  "user_specification": {
+    "gender": [
+      "male",
+      "female",
+      "transgender"
+    ]
+  },
+  "admin": {
+    "buttons": [
+      {
+        "src": "https://image.freepik.com/free-icon/upload-arrow_318-26670.png"
+      },
+      {
+        "src": "https://image.freepik.com/free-icon/speaker-audio-interface-symbol_318-69591.png"
+      },
+      {
+        "src": "https://image.freepik.com/icones-gratuites/forme-de-l&-39;oeil-humain_318-61846.png"
+      },
+      {
+        "src": "https://t3.ftcdn.net/jpg/00/79/69/20/160_F_79692010_J8oWKjI1AUAfK5Os0cWX7yCD9Qf6FwnO.jpg"
+      },
+      {
+        "src": "http://cdn-4.signology.org/images/flag-symbol.jpg"
+      },
+      {
+        "src": "http://image.flaticon.com/icons/png/512/0/532.png",
+        "link": "http://www.w3schools.com/images/myw3schoolsimage.jpg"
+      }
+    ]
+  },
+  "ui": {
+    "buttons": [
+      {
+        "src": "http://findicons.com/files/icons/1843/enhanced_xi_vol_2/128/administrator_keys.png"
+      },
+      {
+        "src": "http://findicons.com/files/icons/553/azullustre/128/admin_min.png"
+      }
+    ]
+  },
+  "testcase": {
+    "buttons": [
+      {
+        "src": "http://www.pd4pic.com/images/paper-symbol-office-document-text-lines-writing.png"
+      },
+      {
+        "src": "https://image.freepik.com/free-icon/speaker-audio-interface-symbol_318-69591.png"
+      },
+      {
+        "src": "https://image.freepik.com/free-icon/play-triangular-button-symbol-in-a-circle_318-53734.jpg"
+      },
+      {
+        "src": "https://cdn0.iconfinder.com/data/icons/basic-uses-symbol-vol-3/100/Refresh_Reset_Reload_Again_Restart-512.png"
+      },
+      {
+        "src": "http://image.flaticon.com/icons/png/512/0/532.png"
+      },
+      {
+        "src": "graphics/monitor.png"
+      }
+    ]
+  },
+  "languages": {
+    "buttons": [
+      {
+        "src": "http://www.flags.net/images/smallflags/SWDN0001.GIF",
+        "title": "svenska"
+      },
+      {
+        "src": "http://www.flags.net/images/smallflags/UNKG0001.GIF",
+        "title": "english"
+      },
+      {
+        "src": "http://www.flags.net/images/smallflags/GERM0001.GIF",
+        "title": "deutch"
+      }
+    ]
+  },
+  "descriptiveTestNames": [
+    {
+      "name": "test0",
+      "descriptiveName": "Introduction"
+    },
+    {
+      "name": "test1",
+      "descriptiveName": "Decision Reaction"
+    },
+    {
+      "name": "test2",
+      "descriptiveName": "Trail Making A"
+    },
+    {
+      "name": "test3",
+      "descriptiveName": "Trail Making B"
+    },
+    {
+      "name": "test4",
+      "descriptiveName": "Stroop Congruent"
+    },
+    {
+      "name": "test5",
+      "descriptiveName": "Stroop Incongruent"
+    },
+    {
+      "name": "test6",
+      "descriptiveName": "Word Memory A"
+    },
+    {
+      "name": "test7",
+      "descriptiveName": "Word Memory B"
+    },
+    {
+      "name": "test8",
+      "descriptiveName": "Delayed Recognition"
+    },
+    {
+      "name": "test9",
+      "descriptiveName": "Finger Tapping"
+    },
+    {
+      "name": "test10",
+      "descriptiveName": "Geriatric Depression Scale"
+    },
+    {
+      "name": "test11",
+      "descriptiveName": "Block Design"
+    },
+    {
+      "name": "test12",
+      "descriptiveName": "Word Fluency"
+    }
+  ],
+  "test0": {
+    "repetitions": 3,
+    "delay_min": 1000,
+    "delay_max": 3000,
+    "delay_between": 2000,
+    "onlyTest": false,
+    "sequence": {
+      "delay": [],
+      "direction": []
+    },
+    "btnPosition": [
+      {
+        "show": false,
+        "x": 100,
+        "y": 100
+      },
+      {
+        "show": false,
+        "x": 780,
+        "y": 100
+      },
+      {
+        "show": false,
+        "x": 500,
+        "y": 539
+      }
+    ],
+    "buttons": [
+      {
+        "src": "",
+        "show": false
+      },
+      {
+        "src": "",
+        "show": false
+      },
+      {
+        "src": "",
+        "show": false
+      }
+    ]
+  },
+  "test1": {
+    "repetitions": 20,
+    "traningRepetitions": 2,
+    "delay_min": 5000,
+    "delay_max": 15000,
+    "onlyTest": false,
+    "sequenceTestNr": 2,
+    "sequence": {
+      "delay": [],
+      "direction": []
+    },
+
+    "images": [
+      {
+        "src": "graphics/cross.png"
+      }
+    ],
+    "buttons": [
+      {
+        "src": "",
+        "show": true
+      },
+      {
+        "src": "graphics/arrowLeft.png",
+        "show": true
+      },
+      {
+        "src": "graphics/arrowRight.png",
+        "show": true
+      }
+    ]
+  },
+  "test2": {
+    "sequenceTestNr": 6,
+    "button_show_order": [],
+    "buttons_sequence": {
+      "1": [],
+      "2": []
+    },
+    "sequence": [
+      1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25
+    ],
+    "completed_color": "green",
+    "uncompleted_color": "white",
+    "finished_color": "red",
+    "button_order": [],
+    "buttons": [
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 4,
+          "y": 4
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 7,
+          "y": 4
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 3,
+          "y": 6
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 2,
+          "y": 3
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 1,
+          "y": 3
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 6,
+          "y": 2
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 5,
+          "y": 4
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 3,
+          "y": 5
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 7,
+          "y": 2
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 4,
+          "y": 6
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 1,
+          "y": 2
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 6,
+          "y": 4
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 6,
+          "y": 1
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 2,
+          "y": 1
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 1,
+          "y": 6
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 1,
+          "y": 4
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 3,
+          "y": 4
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 6,
+          "y": 6
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 5,
+          "y": 2
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 6,
+          "y": 3
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 4,
+          "y": 2
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 5,
+          "y": 5
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 4,
+          "y": 1
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 2,
+          "y": 4
+        }
+      }
+    ]
+  },
+  "test3": {
+    "sequenceTestNr": 6,
+    "button_show_order": [],
+    "buttons_sequence": {
+      "1": [],
+      "2": []
+    },
+    "sequence": [
+      1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25
+    ],
+    "completed_color": "green",
+    "uncompleted_color": "white",
+    "finished_color": "red",
+    "buttons": [
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 4,
+          "y": 4
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 7,
+          "y": 4
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 3,
+          "y": 6
+        }
+      },
+      {
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 2,
+          "y": 3
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 1,
+          "y": 3
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 6,
+          "y": 2
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 5,
+          "y": 4
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 3,
+          "y": 5
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 7,
+          "y": 2
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 4,
+          "y": 6
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 1,
+          "y": 2
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 6,
+          "y": 4
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 6,
+          "y": 1
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 2,
+          "y": 1
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 1,
+          "y": 6
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 1,
+          "y": 4
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 3,
+          "y": 4
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 6,
+          "y": 6
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 5,
+          "y": 2
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 6,
+          "y": 3
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 4,
+          "y": 2
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 5,
+          "y": 5
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 4,
+          "y": 1
+        }
+      },
+      {
+
+        "background_color": "white",
+        "btnShow": true,
+        "location": {
+          "x": 2,
+          "y": 4
+        }
+      }
+    ]
+  },
+  "test4": {
+    "sequenceTestNr": 2,
+    "betweenButtInterval": 2000,
+    "repetitions": 50,
+    "sequence": {
+      "color1": [],
+      "color2": [],
+      "button": []
+    },
+    "colors": [
+      "red",
+      "green",
+      "yellow",
+      "blue"
+    ],
+    "images": [
+      {
+        "src": "graphics/cross.png"
+      }
+    ],
+    "buttons": [
+      {
+        "background_color": "white",
+        "text_color":"white"
+      },
+      {
+        "background_color": "white",
+        "text_color":"white"
+      }
+    ]
+  },
+  "test5": {
+    "sequenceTestNr": 6,
+    "betweenButtInterval": 2000,
+    "repetitions": 50,
+    "sequence": {
+      "color1": [],
+      "color2": [],
+      "button": []
+    },
+    "colors": [
+      "red",
+      "green",
+      "yellow",
+      "blue"
+    ],
+    "images": [
+      {
+        "src": "graphics/cross.png"
+      }
+    ],
+    "buttons": [
+      {
+        "background_color":"white",
+        "text_color": "white"
+      },
+      {
+        "background_color": "white",
+        "text_color": "white"
+      }
+    ],
+    "labels": [
+      {
+        "text_color": "black",
+        "background_color": ""
+      }
+    ]
+  },
+  "test6": {
+    "word_sequence1": [],
+    "word_sequence2": [],
+    "word_sequence3": [],
+    "sequenceTestNr": 5,
+    "howMuchRepeatTest": 1,
+    "howMuchRepeat": 3,
+    "repetitions": 10,
+    "delay": 2000,
+    "waitingSeconds": 10,
+    "buttons": [
+      {
+        "src": "graphics/doneBtn.png"
+      },
+      {
+        "src": "graphics/microphone-v3-icon--free-sound-icons--softicons-com-1.png"
+      },
+      {
+        "src": "graphics/download5.png"
+      }
+    ]
+  },
+  "test7": {
+    "waitingSeconds": 10,
+    "videoTest": "",
+    "buttons": [
+      {
+        "src": "https://image.freepik.com/free-icon/speaker-audio-interface-symbol_318-69591.png"
+      },
+      {
+        "src": "graphics/doneBtn.png"
+      },
+      {
+        "src": "graphics/microphone-v3-icon--free-sound-icons--softicons-com-1.png"
+      }
+    ]
+  },
+  "test8": {
+    "nr_of_words": 10,
+    "original_words": [],
+    "new_words": [],
+    "sequence": [
+
+      10,
+      11,
+      2,
+      12,
+      4,
+      5,
+      13,
+      1,
+      14,
+      15,
+      3,
+      7,
+      16,
+      0,
+      17,
+      18,
+      8,
+      19,
+      6,
+      9
+    ],
+    "buttons": [
+      {
+        "background_color": "white",
+        "text_color": "black"
+      },
+      {
+        "background_color": "white",
+        "text_color": "black"
+      }
+    ]
+  },
+  "test9": {
+    "testRepetitions": 1,
+    "repetitions": 5,
+    "delay": 10000,
+    "subDelay": 50,
+    "completed_color": "green",
+    "uncompleted_color": "grey",
+    "sequence": [
+      "5",
+      "4",
+      "3",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "buttons": [
+      {
+        "background_color": "white"
+      },
+      {
+        "background_color": "white"
+      },
+      {
+        "background_color":  "white"
+      },
+      {
+        "background_color":  "white"
+      }
+    ]
+  },
+  "test10": {
+    "labels": [
+      {
+        "text": ""
+      }
+    ],
+    "buttons": [
+      {
+        "background_color": "white",
+        "text_color": "black",
+        "text":""
+      },
+      {
+        "background_color": "white",
+        "text_color": "black",
+        "text": ""
+      }
+    ]
+  },
+  "test11": {
+    "testSquares": [
+      {
+        "block10":"triangle-none",
+        "block11": "triangle-none",
+        "block12": "triangle-none",
+        "block13": "triangle-up-left"
+      },
+      {
+        "block10":"triangle-none",
+        "block11": "triangle-full",
+        "block12": "triangle-full",
+        "block13": "triangle-up-left"
+      },
+      {
+        "block10": "triangle-none",
+        "block11": "triangle-down-right",
+        "block12": "triangle-down-right",
+        "block13": "triangle-full"
+      }
+    ]
+  },
+  "test12": {
+    "testDuration": 60
+  }
+}

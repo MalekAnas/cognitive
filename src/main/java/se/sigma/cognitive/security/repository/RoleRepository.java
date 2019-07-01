@@ -3,6 +3,7 @@ package se.sigma.cognitive.security.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import se.sigma.cognitive.security.model.Role;
+import se.sigma.cognitive.security.model.result.tests.Test1;
 
 import java.util.List;
 

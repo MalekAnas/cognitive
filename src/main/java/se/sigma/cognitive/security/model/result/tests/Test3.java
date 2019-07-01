@@ -25,8 +25,8 @@ public class Test3 {
     @CollectionTable(name = "test3_result", joinColumns = @JoinColumn(name = "test3_id"))
     private List<Test3Result> results = new ArrayList<>();
 
-
-    @OneToOne(mappedBy = "test3")
-    private Report report;
+//
+//    @OneToOne(mappedBy = "test3")
+//    private Report report;
 }
 

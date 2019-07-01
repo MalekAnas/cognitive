@@ -19,6 +19,7 @@ import se.sigma.cognitive.security.repository.RoleRepository;
 import se.sigma.cognitive.security.repository.UserRepository;
 import se.sigma.cognitive.security.repository.VerificationTokenRepository;
 import se.sigma.cognitive.security.util.EmailConfigration;
+import se.sigma.cognitive.security.util.UserPublicIdGenerator;
 
 import javax.persistence.OneToMany;
 import javax.transaction.Transactional;
@@ -43,6 +44,10 @@ public class UserServiceImpl implements UserService {
     private PasswordEncoder passwordEncoder;
     @Autowired
     private EmailConfigration emailConfigration;
+    @Autowired
+    private UserPublicIdGenerator userPublicIdGenerator;
+
+
     //CONST
     public static final String TOKEN_INVALID = "invalidToken";
     public static final String TOKEN_EXPIRED = "expired";
@@ -61,7 +66,10 @@ public class UserServiceImpl implements UserService {
         //encoded password
         String encodedPassword = passwordEncoder.encode(userDto.getPassword());
 
+        String publicUserId= userPublicIdGenerator.generateUserId(30);
 
+
+        newUser.setPublicUserId(publicUserId);
         newUser.setFirstName(userDto.getFirstName());
         newUser.setLastName(userDto.getLastName());
         newUser.setEmail(userDto.getEmail());
@@ -87,7 +95,10 @@ public class UserServiceImpl implements UserService {
 
         //b-crypting the password
         String cryptedPassword = passwordEncoder.encode(userDto.getPassword());
+        String publicUserId= userPublicIdGenerator.generateUserId(30);
 
+
+        newPartner.setPublicUserId(publicUserId);
 
         newPartner.setFirstName(userDto.getFirstName());
         newPartner.setLastName(userDto.getLastName());
@@ -119,7 +130,10 @@ public class UserServiceImpl implements UserService {
 
         //b-crypting the password
         String cryptedPassword = passwordEncoder.encode(userDto.getPassword());
+        String publicUserId= userPublicIdGenerator.generateUserId(30);
 
+
+        newUser.setPublicUserId(publicUserId);
 
         newUser.setFirstName(userDto.getFirstName());
         newUser.setLastName(userDto.getLastName());
@@ -150,7 +164,10 @@ public class UserServiceImpl implements UserService {
 
         //b-crypting the password
         String cryptedPassword = passwordEncoder.encode(userDto.getPassword());
+        String publicUserId= userPublicIdGenerator.generateUserId(30);
 
+
+        newAdmin.setPublicUserId(publicUserId);
 
         newAdmin.setFirstName(userDto.getFirstName());
         newAdmin.setLastName(userDto.getLastName());
@@ -190,12 +207,6 @@ public class UserServiceImpl implements UserService {
         userRepository.save(user);
     }
 
-    @Override
-    public void changeUserUserName(User user, String newUserName) {
-
-        user.setUserNickName(newUserName);
-        userRepository.save(user);
-    }
 
     @Override
     public void save(User user) {

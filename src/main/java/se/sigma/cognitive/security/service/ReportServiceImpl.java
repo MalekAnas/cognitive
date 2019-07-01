@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 import se.sigma.cognitive.security.model.result.Report;
 import se.sigma.cognitive.security.repository.ReportRepository;
 
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -25,9 +27,16 @@ public class ReportServiceImpl implements ReportService {
         reportRepository.save(report);
     }
 
-    @Override
-    public Report bringReportById(Long id) {
-        Report myReport = reportRepository.findReportById(id);
-        return myReport;
+
+
+
+
+
+
+
+    public Report bringReportById(Long id){
+
+        return reportRepository.findReportById(id);
     }
+
 }

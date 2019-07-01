@@ -32,9 +32,9 @@ public class Test6 {
     @CollectionTable(name = "test6_result", joinColumns = @JoinColumn(name = "test6_id"))
     private List<Test6Result> results = new ArrayList<>();
 
-
-    @OneToOne(mappedBy = "test1")
-    private Report report;
+//
+//    @OneToOne(mappedBy = "test1")
+//    private Report report;
 
 
     @ElementCollection

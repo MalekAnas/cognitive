@@ -32,6 +32,6 @@ public class Test11 {
     private List<Test11Result> results = new ArrayList<>();
 
 
-    @OneToOne(mappedBy = "test11")
-    private Report report;
+//    @OneToOne(mappedBy = "test11")
+//    private Report report;
 }

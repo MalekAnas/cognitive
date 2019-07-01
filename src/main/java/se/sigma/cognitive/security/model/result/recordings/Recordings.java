@@ -5,9 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import se.sigma.cognitive.security.model.result.tests.Test6;
 
-import javax.persistence.*;
+import javax.persistence.Embeddable;
 
 @Embeddable
 @Data

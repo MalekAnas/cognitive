@@ -1,5 +1,6 @@
 package se.sigma.cognitive.security.model.result.tests;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import se.sigma.cognitive.security.model.result.Report;
 import se.sigma.cognitive.security.model.result.results.Test1Result;
@@ -22,6 +23,7 @@ public class Test1 {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonIgnore
     private Long id;
 
 
@@ -32,8 +34,9 @@ public class Test1 {
     @ElementCollection
     @CollectionTable(name = "test1_result", joinColumns = @JoinColumn(name = "test1_id"))
     private List<Test1Result> results = new ArrayList<>();
-
-
-    @OneToOne(mappedBy = "test1")
-    private Report report;
+//
+//
+//    @OneToOne(mappedBy = "test1")
+//    @JsonIgnore
+//    private Report report;
 }

@@ -30,12 +30,13 @@ public class Test12 {
     @CollectionTable(name = "test12_result", joinColumns = @JoinColumn(name = "test12_id"))
     private List<Test12Result> results = new ArrayList<>();
 
+
     @ElementCollection
     @CollectionTable(name = "test12_recordings", joinColumns = @JoinColumn(name = "test12_id"))
     private List<Recordings> recordings;
-
-    @OneToOne(mappedBy = "test12")
-    private Report report;
+//
+//    @OneToOne(mappedBy = "test12")
+//    private Report report;
 }
 
 

@@ -23,6 +23,7 @@ public class Report {
     private Long id;
 
 
+    private String userEmail;
     private String patientsName;
 
 

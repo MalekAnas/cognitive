@@ -53,9 +53,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         , "/css/**"
                         , "/images/**"
                         , "/webjars/**"
-                        , "/reports/**"
-                        , "/save_report/**"
-                        , "/report/**"
+//                        , "/reports/**"
+                        , "/save_config/**"
+//                        , "/report/**"
+//                        , "/tests/**"
 
 
                 )
